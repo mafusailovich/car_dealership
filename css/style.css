@@ -1,0 +1,493 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Ruda:wght@600;700;800&display=swap"); /*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+.figure, .request-btn, .menu__item, .logo, .header__title, .header__youone {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #fff;
+}
+
+.footer__text-item, .hits__title, .about__text-item {
+  font-family: "Ruda", sans-serif;
+  color: #fff;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.header__bg {
+  background-color: #242427;
+  width: 100%;
+  height: 835px;
+  position: relative;
+  z-index: 0;
+}
+.header__logo {
+  position: absolute;
+  top: 39px;
+  left: 130px;
+  padding-left: 8px;
+  z-index: 1;
+}
+.header__menu {
+  position: absolute;
+  top: 36px;
+  right: 103px;
+  max-width: 471px;
+  width: 100%;
+  z-index: 10;
+}
+.header__youone {
+  position: absolute;
+  top: 199px;
+  left: 130px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 19.92px;
+  z-index: 10;
+}
+.header__title {
+  background: linear-gradient(92.07deg, #003ace 0%, #ce0094 74.9%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  top: 330px;
+  left: 127px;
+  font-size: 48px;
+  line-height: 56.25px;
+  z-index: 10;
+  max-width: 373px;
+}
+.header__request {
+  padding: 19px 0px 18px 0px;
+  text-align: center;
+  position: relative;
+  top: 493px;
+  left: 130px;
+  z-index: 10;
+}
+.header__middle-photo {
+  width: 894px;
+  height: 780px;
+  background-image: url("/images/lighting.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  top: -119px;
+  left: 291px;
+  z-index: 0;
+}
+.header__figure {
+  position: absolute;
+  top: 84px;
+  right: 0px;
+  max-width: 550px;
+  animation: go-line 4s linear infinite;
+}
+
+@keyframes go-line {
+  0% {
+    right: -200px;
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    right: 1200px;
+    opacity: 0;
+  }
+}
+.logo {
+  border-left: 1px solid #d95583;
+  position: absolute;
+  z-index: 10;
+}
+.logo__title {
+  font-size: 24px;
+  line-height: 28.13px;
+}
+.logo__text {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 19.92px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu__item {
+  font-size: 18px;
+  line-height: 21.09px;
+}
+
+.request-btn {
+  display: block;
+  max-width: 200px;
+  width: 100%;
+  height: 62px;
+  background: linear-gradient(95.49deg, #53498f 0%, #d95583 100%);
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 23.44px;
+}
+
+.middle-photo__item {
+  position: absolute;
+}
+.middle-photo__item--lighting {
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.middle-photo__item--car {
+  max-width: 300px;
+  top: 236px;
+  left: 269px;
+  z-index: 3;
+}
+.middle-photo__item--pond-1 {
+  max-width: 113px;
+  top: 368.91px;
+  left: 288px;
+  z-index: 2;
+}
+.middle-photo__item--pond-2 {
+  max-width: 61px;
+  top: 352px;
+  left: 508px;
+  z-index: 2;
+}
+.middle-photo__item--points {
+  max-width: 93px;
+  top: 215px;
+  left: 475px;
+  z-index: 4;
+}
+
+.figure {
+  font-weight: 200;
+  font-size: 490px;
+  line-height: 574.22px;
+  overflow: hidden;
+  color: rgba(132, 132, 132, 0.5019607843);
+}
+
+.main__bg {
+  background-color: #242427;
+}
+
+.about__text {
+  margin: 0px 152px 123px 258px;
+}
+.about__text-item {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36.51px;
+  max-width: 1030px;
+  margin-bottom: 36.51px;
+}
+.about__text-item--red {
+  color: #ff0000;
+}
+
+.hits__title {
+  background: linear-gradient(120.71deg, #003ace 31.37%, #ff0000 79.66%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 60.85px;
+  max-width: 335px;
+  margin-left: 130px;
+  margin-bottom: 123px;
+}
+.hits__cars {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 436px));
+  -moz-column-gap: 116px;
+       column-gap: 116px;
+  row-gap: 56px;
+  justify-content: center;
+  padding-bottom: 56px;
+}
+.hits__item {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.footer__bg {
+  background: linear-gradient(180deg, #242427 0%, rgb(103, 103, 103) 100%);
+  padding-top: 120px;
+  padding-bottom: 52px;
+}
+.footer__text {
+  max-width: 1106;
+  margin: 0px 124px 49px 210px;
+}
+.footer__text-item {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18.26px;
+  margin-bottom: 14px;
+}
+.footer__links {
+  max-width: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 431px 0px 509px;
+}
+.footer__link {
+  width: 65px;
+  height: 65px;
+}
+
+@media (max-width: 1300px) {
+  .figure {
+    font-size: 200px;
+    line-height: 200px;
+  }
+  .header__figure {
+    max-width: 250px;
+  }
+  .footer__links, .footer__text {
+    margin: 0 auto;
+  }
+  .footer__text {
+    text-align: center;
+  }
+}
+@media (max-width: 1200px) {
+  .header__middle-photo {
+    width: 596px;
+    height: 520px;
+    top: 117px;
+    left: 352px;
+    background-size: 50% 50%;
+  }
+  .middle-photo__item--car {
+    top: 55px;
+    left: 158px;
+  }
+  .middle-photo__item--pond-1 {
+    top: 177.91px;
+    left: 175px;
+  }
+  .middle-photo__item--pond-2 {
+    top: 179px;
+    left: 393px;
+  }
+  .middle-photo__item--points {
+    top: 34px;
+    left: 364px;
+  }
+  .about__text {
+    margin: 0px 20px 50px 20px;
+  }
+  .hits__title {
+    margin: 0px auto 40px auto;
+    text-align: center;
+  }
+}
+@media (max-width: 880px) {
+  .header__middle-photo {
+    width: 596px;
+    height: 520px;
+    top: 140px;
+    left: 0;
+    margin: 0 auto;
+  }
+  .header__youone {
+    top: 122px;
+  }
+  .header__title {
+    top: 165px;
+    left: 0;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .header__request {
+    top: 601px;
+    left: 0;
+    margin: 0 auto;
+  }
+  .header__menu {
+    height: 100px;
+    width: 100px;
+  }
+  .header__figure {
+    max-width: 700px;
+    top: 149px;
+  }
+  .menu {
+    flex-direction: column;
+  }
+  .figure {
+    font-size: 75vw;
+    line-height: 500px;
+  }
+  @keyframes go-line {
+    0% {
+      right: -400px;
+      opacity: 0;
+    }
+    30% {
+      opacity: 1;
+    }
+    80% {
+      opacity: 0;
+    }
+    100% {
+      right: 1200px;
+      opacity: 0;
+    }
+  }
+}
+@media (max-width: 640px) {
+  .header__middle-photo {
+    width: 250px;
+    height: 220px;
+    top: 140px;
+    left: 0;
+    margin: 0 auto;
+  }
+  .header__logo {
+    top: 18px;
+    left: 14px;
+  }
+  .header__menu {
+    top: 18px;
+    right: 20px;
+  }
+  .header__youone {
+    left: 14px;
+  }
+  .header__request {
+    top: 500px;
+  }
+  .header__figure {
+    max-width: 700px;
+    opacity: 0.2;
+    z-index: 0;
+    text-align: right;
+  }
+  .header__bg {
+    height: 700px;
+  }
+  .middle-photo__item--car {
+    top: 10px;
+    left: -24px;
+  }
+  .middle-photo__item--pond-1 {
+    top: 132.91px;
+    left: -7px;
+  }
+  .middle-photo__item--pond-2 {
+    top: 134px;
+    left: 211px;
+  }
+  .middle-photo__item--points {
+    top: -11px;
+    left: 182px;
+  }
+  .about__text-item {
+    font-size: 20px;
+    line-height: 22px;
+  }
+  .hits__cars {
+    padding-bottom: 0px;
+  }
+  .footer__bg {
+    padding-top: 40px;
+  }
+}
+@media (max-width: 440px) {
+  .header__figure {
+    max-width: 550px;
+  }
+  .footer__link {
+    width: 40px;
+    height: 40px;
+  }
+}
